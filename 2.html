@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>    
+</head>
+<body>
+    <h1>악기</h1>
+    <script>
+        inst = ["피아노", "바이올린", "기타", "트럼펫", "피리", "팀파니", "첼로", "바순"];
+        
+        document.write(inst[0]);
+        document.write(inst[1]);
+    </script>
+
+    <h3>count</h3>
+    
+    <script>
+        document.write(inst.length);
+    </script>
+    
+    <h3>push</h3>
+    <ul>
+    <script>
+        var i = 0;
+        while (i < inst.length){
+            document.write('<li><a href="https://ko.wikipedia.org/wiki/' + inst[i] + '"' + "target='_blank'>" + inst[i] + '</a>' + '</li>');
+            document.write('<img src= "inst_' + i + '.jpg" width= 230px height= 220px>')
+            i = i + 1;
+        }
+        
+    </script>
+    </ul>
+
+    <script>
+        var i = 0;
+        while (i < document.querySelectorAll('a').length) {
+            document.querySelectorAll('a')[i].style.color = 'black';
+            i = i + 1;
+        }
+    </script>
+</body>
+</html>
